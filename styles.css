@@ -229,6 +229,7 @@ a {
   }
 
 @media all and (max-width:1000px) {
+
     .section {
         flex-direction: column;
     }
@@ -239,19 +240,65 @@ a {
     .nav {
         margin-top: 8px;
     }
+
+    .nav-bar {
+        margin-top: 8px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .margen-interno {
+        padding: 10px;
+    }
+
     .social {
         margin: 7px 0;
     }
-    .aside {
-        display: flex;
-        justify-content: center;
-    }
+
     .texto-principal {
         height: 500px;
       }
     .texto-principal h1 {
         font-size: 18px;
     } 
+
+    .socialF {
+        flex: 1 1 auto;
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .socialF-icon {
+        color: #fff;
+    }
+
+    .aside {
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    .pie {
+        padding: 10px;
+    }
+
+    .socialF {
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .socialF-icon:hover {
+        color: #f56154;
+    }
+
+    .socialF-icon {
+        margin: 0 10px;
+    }
 }
 
 @media all and (max-width:850px) {
@@ -274,6 +321,26 @@ a {
 
 @media all and (max-width:440px) {
 
+    h3 {
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 0;
+        margin-top: -64px;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 0 0 11px 0;
+    }
+    .aside {
+        flex-direction: column;
+    }
+
+    .socialF {
+        margin: 0 12px;
+    }
 
 }
 
@@ -284,14 +351,6 @@ a {
         background-size: cover;
     }
 
-    .nav-bar {
-        margin-top: 8px;
-    }
-
-    .social {
-        display: none;
-    }
-
     .aside {
         flex-direction: column;
     }
@@ -300,18 +359,30 @@ a {
         padding: 0;
     }
 
-    .pie {
-        padding: 10px;
+    .socialF {
+        margin: 0;
+    }
+
+}
+
+@media all and (max-width:375px) {
+
+    h3 {
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 0;
+        margin-top: -68px;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 21px;
+        text-transform: uppercase;
+        padding: 0 0 11px 0;
     }
 
     .socialF {
-        flex: 1 1 auto;
-        display: flex;
-        align-content: space-around;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        flex-direction: row;
+        margin: 0;
     }
 
-    
 }
