@@ -1,0 +1,312 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bruno Ace','Libre Franklin','Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*El contenedor 'padre' abarca todo nuestro codigo y cajitas*/
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 0 50px;
+}
+
+/*Estos son los 3 contenedores hijos del contenedor 'padre' - Header - Section - Footer -*/
+
+.header {
+    background: url(pictures/animenight.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+  .menu {
+    background: #10009e2a;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #ffffff46;
+
+  }
+     .logo {
+        flex: 1 1 auto;
+        font-size: 30px;
+     }
+       
+     .logo a {
+        color: #fff;
+     }
+
+     .logo a:hover {
+        color: #f56154;
+     }
+
+    .bars {
+        display: none;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-bar ul li a {
+        display: block;
+        color: #fff;
+        font-size: 10px;
+        padding: 0px 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 5px;
+        transition: .2s;
+    }
+
+    .nav-bar ul li a:hover  {
+        color: #f56154;
+    }
+
+    .nav-bar ul li a.active  {
+        color: #f56154;
+    }
+
+/*Estos son los estilos de los iconos*/
+        .nav-home {
+            width: 18px;
+            height: 18px;
+            margin: 0 11px;
+            padding: 0;
+        }
+
+     .social {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+     }
+
+      .social a {
+        font-size: 15px;
+        color: #fff;
+        padding: 0 10px;
+        margin: 0;
+      }
+
+      .social a:hover {
+        color: #f56154;
+     }
+
+
+
+  .texto-principal {
+    /*background: #8696FE;*/
+    height: 600px;
+    display: flex;
+    align-items: center;
+  }   
+    h1 {
+        font-family: 'Libre Franklin';
+        font-size: 20px;
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+
+.section {
+    background: #1d3d6a;
+    display: flex;
+}
+  .articulos {
+    background: #1d3d6a;
+    flex: 1 3 auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+    .article {
+        flex: 1 1 45%;
+        color: #e6e0e0;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 10px 10px 0 0;
+        background: #c6c2dc3a;
+    }
+
+    .article img {
+        width: 100%;
+    }
+
+    .article a {
+        color: #fff;
+        font-size: 13px;
+        padding: 10px;
+        background: #000;
+        margin: 10px 0;
+        display: inline-block;
+    }
+
+    .article a:hover {
+        background: #1d3d6a;
+    }
+
+    h3 {
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 0;
+        margin-top: -80px;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 0 0 10px 0;
+    }
+
+    .navegacion {
+        background: #000;
+        flex: 1 1 100%;
+        margin: 10px 10px 0 0;
+    }
+
+    .navegacion a {
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+    }
+
+  .aside {
+    /*background: #e8e493;*/
+    flex: 1 1 auto;
+    margin: 10px 5px 10px 0;
+  }
+
+  .aside img {
+    width: 100%;
+  }
+
+  .aside h4 {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    border-top: 20px solid #1d3d6a;
+}
+
+.socialF {
+    display: none;
+}
+
+  .pie {
+    /*background: #A5D7E8;*/
+    text-align: center;
+  }
+
+  .pie a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+
+  }
+
+@media all and (max-width:1000px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .nav {
+        margin-top: 8px;
+    }
+    .social {
+        margin: 7px 0;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+    .texto-principal {
+        height: 500px;
+      }
+    .texto-principal h1 {
+        font-size: 18px;
+    } 
+}
+
+@media all and (max-width:850px) {
+    .off {
+        display: none;
+    }
+    .fa-house, .fa-user-astronaut, .fa-comment, .fa-newspaper, .fa-paper-plane {
+        width: 27px;
+        height: 27px;
+        margin: 8px;
+    }
+}
+
+@media all and (max-width:600px) {
+
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:440px) {
+
+
+}
+
+@media all and (max-width:400px) {
+
+    .nav-bar {
+        margin-top: 8px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .aside {
+        flex-direction: column;
+    }
+
+    .margen-interno {
+        padding: 0;
+    }
+
+    .pie {
+        padding: 10px;
+    }
+
+    .socialF {
+        flex: 1 1 auto;
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    
+}
