@@ -234,7 +234,7 @@ a {
         flex-direction: column;
     }
     .menu {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
     }
     .nav {
@@ -311,6 +311,59 @@ a {
         margin: 8px;
     }
 } 
+
+@media all and (max-width:750px) {
+    .bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars .line {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 49px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #10009e2a;
+        transition: .5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 385px;
+    }
+
+    .hide {
+        display: none;
+        transition: opacity 1s ease;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 20px;
+    }
+
+}
 
 @media all and (max-width:600px) {
 
